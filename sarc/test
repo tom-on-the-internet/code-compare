@@ -8,3 +8,5 @@ $ ../sarc.py "I don't this this endpoint needs a test. Do you??"
 | i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
 $ ../sarc.js "I don't this this endpoint needs a test. Do you??"
 | i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
+$ php ../sarc.php "I don't this this endpoint needs a test. Do you??"
+| i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
