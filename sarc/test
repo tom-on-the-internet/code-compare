@@ -1,0 +1,10 @@
+# tush test https://github.com/darius/tush
+
+$ ../sarc.sh "I don't this this endpoint needs a test. Do you??"
+| i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
+$ go run ../sarc.go "I don't this this endpoint needs a test. Do you??"
+| i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
+$ ../sarc.py "I don't this this endpoint needs a test. Do you??"
+| i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??
+$ ../sarc.js "I don't this this endpoint needs a test. Do you??"
+| i DoN't ThIs ThIs EnDpOiNt NeEdS a TeSt. Do YoU??

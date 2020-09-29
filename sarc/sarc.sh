@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 input="${*,,}"
-input=$(echo "$input" | xargs) #trim with space
+input=$(echo "$input" | xargs -0) #trim with space
 character_index=0
 should_uppercase="false"
 

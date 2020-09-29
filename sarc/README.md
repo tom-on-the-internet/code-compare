@@ -4,6 +4,8 @@ Comparing simple script/program in a few different programming languages.
 
 ## Bash
 
+Time: ~0.08 seconds
+
 ### Advantages
 
 1. Executes very fast.
@@ -11,14 +13,30 @@ Comparing simple script/program in a few different programming languages.
 
 ### Disadvantages
 
-1. It's confusing. The code does not, in my opinion, self document. You need to add comments to understand what exactly is happening.
-2. Hard to know if it'll work cross platform. I'm writing this in bash, but another system could have bash scripts run by another interpreter. I also hard to remember what works in bash vs being POSIX compliant.
-3. Not a lot of editor help. I can use shell check to get a bit of help, but I generally won't know if it works until I run it.
+1. Can be confusing.
+2. Cross platform can be challenging.
+3. Not self contained.
+4. Not a lot of editor help.
+5. No type safety.
 
 ## Python
 
 ## JavaScript
 
 ## Golang
+
+Time: ~0.01 seconds
+
+### Advantages
+
+1. Runs very fast.
+2. Type safety.
+3. Easy to read code.
+4. Easy to distribute.
+5. Easy to install locally.
+
+### Disadvantages
+
+1. Verbose.
 
 ## PHP

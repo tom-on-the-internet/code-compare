@@ -13,6 +13,7 @@ func main() {
 
 	if len(text) == 0 {
 		fmt.Println("USAGE: sarc The text you want to be sarcastic")
+
 		os.Exit(1)
 	}
 
