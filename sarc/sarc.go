@@ -4,12 +4,13 @@ import (
 	"fmt"
 	"os"
 	"strings"
+	"time"
 	"unicode"
 )
 
 func main() {
-	args := os.Args[1:]
-	text := ArgsToString(args)
+	start := time.Now()
+	text := strings.Trim(strings.Join(os.Args[1:], ""), " ")
 
 	if len(text) == 0 {
 		fmt.Println("USAGE: sarc The text you want to be sarcastic")
@@ -18,26 +19,21 @@ func main() {
 	}
 
 	sarcasticText := ToSarcastic(text)
-	fmt.Println(sarcasticText)
-}
-
-func ArgsToString(args []string) string {
-	return strings.Trim(strings.Join(args, " "), " ")
+	fmt.Println(sarcasticText, time.Since(start))
 }
 
 func ToSarcastic(text string) string {
-	var output []rune
+	output := []rune(text)
 	shouldUpperCase := true
 
-	for _, character := range text {
+	for idx, character := range text {
 		if unicode.IsLetter(character) {
 			shouldUpperCase = !shouldUpperCase
 		}
 
+		output[idx] = unicode.ToLower(character)
 		if shouldUpperCase {
-			output = append(output, unicode.ToUpper(character))
-		} else {
-			output = append(output, unicode.ToLower(character))
+			output[idx] = unicode.ToUpper(character)
 		}
 	}
 
